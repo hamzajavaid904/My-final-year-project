@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAE8E8"
+    tools:context=".MedCheckout">
+    <LinearLayout
+        android:id="@+id/linearlayoutMEDC"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgback"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/leftchevron1"
+            >
+        </ImageView>
+        <TextView
+            android:id="@+id/textViewApp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Patient Details"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/edmdcFN"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/title"
+        android:drawableLeft="@drawable/person_white"
+        android:drawablePadding="10sp"
+        android:hint="Full Name"
+        android:paddingStart="20sp"
+        android:paddingTop="5sp"
+        android:textColor="@color/white"
+        android:textColorHint="#D2D2D2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayoutMEDC" />
+
+    <EditText
+        android:id="@+id/edmdcadd"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/title"
+        android:drawableLeft="@drawable/security_white"
+        android:drawablePadding="10sp"
+        android:hint="Address"
+        android:paddingStart="20sp"
+        android:paddingTop="5sp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textColorHint="#D2D2D2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edmdcFN" />
+
+
+    <EditText
+        android:id="@+id/edmdcpc"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/title"
+        android:drawableLeft="@drawable/person_white"
+        android:drawablePadding="10sp"
+        android:hint="Pin code"
+        android:inputType="textPersonName"
+        android:paddingStart="20sp"
+        android:paddingTop="5sp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textColorHint="#D2D2D2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edmdcadd" />
+
+    <EditText
+        android:id="@+id/edmdcCN"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/title"
+        android:drawableLeft="@drawable/email_white"
+        android:drawablePadding="10sp"
+        android:hint="Contact Number"
+        android:inputType="textPersonName"
+        android:paddingStart="20sp"
+        android:paddingTop="5sp"
+        android:textColor="@color/white"
+        android:textColorHint="#D2D2D2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edmdcpc" />
+
+    <Button
+        android:id="@+id/btnmdcbook"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btnstyle"
+        android:text="Book"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edmdcCN">
+
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAE8E8"
+    tools:context=".Appiontment">
+
+    <LinearLayout
+        android:id="@+id/linearlayoutAPP"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/imgback"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/leftchevron1"
+        >
+    </ImageView>
+        <TextView
+            android:id="@+id/textViewApp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/input_bg"
+            android:gravity="center"
+            android:text="Book Appiontment"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+             />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edAppFN"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btnstyle"
+        android:drawableLeft="@drawable/person_white"
+        android:drawablePadding="10sp"
+        android:hint="Full Name"
+        android:paddingStart="20sp"
+        android:paddingTop="10sp"
+        android:textColor="@color/white"
+        android:textColorHint="#D2D2D2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayoutAPP" />
+
+    <EditText
+        android:id="@+id/edAppadd"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btnstyle"
+        android:drawableLeft="@drawable/security_white"
+        android:drawablePadding="10sp"
+        android:hint="Address"
+        android:paddingStart="20sp"
+        android:paddingTop="10sp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textColorHint="#D2D2D2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edAppFN" />
+
+    <EditText
+        android:id="@+id/edAppCN"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btnstyle"
+        android:drawableLeft="@drawable/email_white"
+        android:drawablePadding="10sp"
+        android:hint="Contact Number"
+        android:inputType="textPersonName"
+        android:paddingStart="20sp"
+        android:paddingTop="10sp"
+        android:textColor="@color/white"
+        android:textColorHint="#D2D2D2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edAppadd" />
+
+    <EditText
+        android:id="@+id/edAppfee"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/btnstyle"
+        android:drawableLeft="@drawable/person_white"
+        android:drawablePadding="10sp"
+        android:hint="Fees"
+        android:inputType="textPersonName"
+        android:paddingStart="20sp"
+        android:paddingTop="10sp"
+        android:textColor="@color/white"
+        android:textColorHint="#D2D2D2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edAppCN" />
+
+
+    <Button
+        android:id="@+id/button_app"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="224dp"
+        android:background="@drawable/btnstyle"
+        android:text="Book Appointment"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edAppfee" />
+
+    <TextView
+        android:id="@+id/textViewAppST"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="465dp"
+        android:background="@drawable/title"
+        android:gravity="center"
+        android:text="select Time"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAppT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_editor_absoluteX="55dp"
+        app:layout_editor_absoluteY="497dp"></TextView>
+
+    <Button
+        android:id="@+id/buttonAppT"
+        style="?android:spinnerStyle"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="100dp"
+        android:text="10:00"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/btnstyle"
+        app:layout_constraintBottom_toTopOf="@+id/button_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.962"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppST"
+        app:layout_editor_absoluteX="57dp"
+        app:layout_editor_absoluteY="497dp"></Button>
+
+    <TextView
+        android:id="@+id/textViewAppSD"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="473dp"
+        android:background="@drawable/title"
+        android:gravity="center"
+        android:text="select Date"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAppT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_editor_absoluteX="57dp"
+        app:layout_editor_absoluteY="497dp"></TextView>
+
+    <Button
+        android:id="@+id/buttonAppD"
+        style="?android:spinnerStyle"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:text="30/04/2024"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/btnstyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppSD"
+        app:layout_editor_absoluteX="57dp"
+        app:layout_editor_absoluteY="525dp"></Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

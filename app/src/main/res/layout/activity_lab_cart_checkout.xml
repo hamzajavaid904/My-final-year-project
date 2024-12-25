@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAE8E8"
+    tools:context=".LabCartCheckout">
+
+
+    <LinearLayout
+        android:id="@+id/linearlayoutLC"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgback"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/leftchevron1"
+            >
+        </ImageView>
+        <TextView
+            android:id="@+id/textViewApp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="Patient Details"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+           />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/edlbcFN"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/title"
+        android:drawableLeft="@drawable/person_white"
+        android:drawablePadding="10sp"
+        android:hint="Full Name"
+        android:paddingStart="20sp"
+        android:paddingTop="10sp"
+        android:textColor="@color/white"
+        android:textColorHint="#D2D2D2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayoutLC" />
+
+
+    <EditText
+        android:id="@+id/edlbcadd"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/title"
+        android:drawableLeft="@drawable/security_white"
+        android:drawablePadding="10sp"
+        android:hint="Address"
+        android:paddingStart="20sp"
+        android:paddingTop="10sp"
+        android:textColor="@color/white"
+        android:textColorHint="#D2D2D2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edlbcFN" />
+
+    <EditText
+        android:id="@+id/edlcbpc"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/title"
+        android:drawableLeft="@drawable/person_white"
+        android:drawablePadding="10sp"
+        android:hint="Pin code"
+        android:inputType="textPersonName"
+        android:paddingStart="20sp"
+        android:paddingTop="10sp"
+        android:textColor="@color/white"
+        android:textColorHint="#D2D2D2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edlbcadd" />
+
+    <EditText
+        android:id="@+id/edlbcCN"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/title"
+        android:drawableLeft="@drawable/email_white"
+        android:drawablePadding="10sp"
+        android:hint="Contact Number"
+        android:inputType="textPersonName"
+        android:paddingStart="20sp"
+        android:paddingTop="10sp"
+        android:textColor="@color/white"
+        android:textColorHint="#D2D2D2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edlcbpc" />
+
+    <Button
+        android:id="@+id/btnlcbbook"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btnstyle"
+        android:textColor="@color/white"
+        android:text="Book"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edlbcCN">
+
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

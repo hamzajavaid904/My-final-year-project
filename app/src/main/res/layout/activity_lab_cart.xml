@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAE8E8"
+    tools:context=".LabCart">
+
+    <LinearLayout
+        android:id="@+id/linearlayoutLC"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgback"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/leftchevron1"
+            >
+        </ImageView>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="24/7 HEALTH CARE"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023">
+
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewlc2"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Lab test and packages"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayoutLC">
+
+    </TextView>
+
+    <ListView
+        android:id="@+id/listViewlc"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="24dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewlc2">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textViewlc3"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/title"
+        android:gravity="center"
+        android:text="Total Cost"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewlc">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textViewlc4"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Select Date"
+        android:background="@drawable/title"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/textViewlc5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewlc3">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/buttonlcdate"
+        style="?android:spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:background="@drawable/title"
+        android:gravity="center"
+        android:text="27/04/2024"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewlc4">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/textViewlc5"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:text="Select Time"
+        android:background="@drawable/title"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewlc3">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/buttonlctime"
+        style="?android:spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="10:00"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        android:background="@drawable/title"
+        app:layout_constraintStart_toEndOf="@+id/buttonlcdate"
+        app:layout_constraintTop_toBottomOf="@+id/textViewlc5">
+
+    </Button>
+
+    <Button
+        android:id="@+id/buttonlccheckout"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btnstyle"
+        android:text="check out"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonlcdate"
+        app:layout_constraintVertical_bias="0.546">
+
+    </Button>
+
+    <!-- <Button
+         android:id="@+id/buttonlcback"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/input_bg"
+         android:text="Back"
+         android:textColor="@color/black"
+         android:textSize="24dp"
+         android:textStyle="bold"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.532"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/buttonlccheckout"
+         app:layout_constraintVertical_bias="0.36">
+
+     </Button>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
